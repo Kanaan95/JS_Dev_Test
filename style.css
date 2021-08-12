@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+:root {
+    --river: #3498db;
+    --midnight: #2c3e50;
+    --emerald: #2ecc71;
+    --nephritis: #27ae60
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.d-none {
+    display: none;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--river);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2 {
+    font-size: 340%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 340%;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 260%;
+    font-weight: 200;
+}
+
+p.count {
+    font-size: 240%;
+}
+
+section.game {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 70%;
+    border: 1px solid var(--midnight);
+    background-color: #ecf0f1;
+    border-radius: 1.75rem;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.41);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.41);
+    box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.41);
+    padding: 16px
+}
+
+section.game h1 {
+    font-size: 340%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+.scores {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score-container {
+    text-align: center;
+}
+
+.score-container>*+* {
+    margin-top: 16px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+button {
+    outline: none;
+    padding: .75rem 1rem;
+    font-size: 170%;
+    background-color: var(--emerald);
+    color: #ffffff;
+    border: 1px solid var(--nephritis);
+    border-radius: .75rem;
+    margin: 0 32px;
+    min-width: 150px;
+}
+
+.moves {
+    position: absolute;
+    bottom: 16px;
+    right: 20px;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.result {
+    font-size: 150%;
+    font-weight: bold;
+}
